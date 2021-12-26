@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prayers</h1>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Prayer request</th>
+      <th>Notes</th>
+      <th>Date</th>
+      <th>User ID</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prayers.each do |prayer| %>
+      <% if prayer.user_id == current_user.id %>  
+        <tr>
+          <td><%= prayer.prayer_request %></td>
+          <td><%= prayer.notes %></td>
+          <td><%= prayer.date %></td>
+          <td><%= prayer.user_id %></td>
+          <td><%= link_to 'Show', prayer %></td>
+          <td><%= link_to 'Edit', edit_prayer_path(prayer) %></td>
+          <td><%= link_to 'Destroy', prayer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prayer', new_prayer_path %>

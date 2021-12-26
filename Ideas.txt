@@ -1,0 +1,16 @@
+Ideas
+- prayer requests are inputted and then can set an amount to have remided about each day
+- the reminders will ransomly pick prayer requests from your list until all have been run through once
+- after that the list will reset and start over
+
+Pages
+- initial home page (Info, navigation to other pages)
+- Main prayer page (shows your current prayer requests for that day, button to add prayer requests, maybe some stats like your longest request or maybe have a streak system, allow the user to set what time and how many prayer requests they want to be reminded of each day)
+- Add a request page (simple fill in database with info)
+- Review prayer requests page (shows the full list of prayer requests you have, allows for you to edit, resolve, or show notes)
+
+Additional things needed
+- user profiles
+- log ins
+- alert system to send prayer requests
+- system to determined what prayer requests are being selected each day
