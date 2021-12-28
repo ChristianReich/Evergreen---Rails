@@ -15,7 +15,7 @@
 
   <tbody>
     <% @prayers.each do |prayer| %>
-      <% if prayer.user_id == current_user.id %>  
+      <% if current_user != nil and prayer.user_id == current_user.id %>  
         <tr>
           <td><%= prayer.prayer_request %></td>
           <td><%= prayer.notes %></td>
